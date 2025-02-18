@@ -8,6 +8,16 @@
       name="keywords"
       content="portfolio, kalana, warnakulasooriya, web developer, software engineer"
     />
+
+    <!-- googleapis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- awesome icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -15,31 +25,41 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Kalana Warnakulasooriya | Software Engineer  </title>
+
+    <title>Kalana Warnakulasooriya | Software Engineer</title>
+
+    <!-- css style sheet -->
+    <link rel="stylesheet" href="/css/header.css" />
     <style>
-      table, th, td {
+      table,
+      th,
+      td {
         border: 1px solid black;
         border-collapse: collapse;
       }
     </style>
   </head>
   <body>
-    <br />
-    <header>
+    <header id="main-header">
+      <a class="logo" href="/index.html">
+        <img src="/assests/images/logo-bg.png" alt="logo"/>
+        <p>KALE</p>
+        <span>x</span>
+      </a>
       <nav>
         <ul>
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#key_skills">Skills</a>
-          <a href="#education">Education</a>
-          <a href="#Projects">Work</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-          <button>
-            <a href="tel:+94719524213">Call now<i class="fa-solid fa-phone"></i></a>
-          </button>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#key_skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#Projects">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button id="call-btn">
+        <a href="tel:+94719524213">Call Now<i class="fa-solid fa-phone"></i></a>
+      </button>
     </header>
     <main>
       <section id="hero">
@@ -480,44 +500,59 @@
           or support
         </p>
         <div>
-          <table style="width: 400px; height: 200px;">
-            <tr style="text-align: center;">
-              <td colspan=""><i id="email-icon" class="fa-regular fa-envelope fa-2x"></i></td>
+          <table style="width: 400px; height: 200px">
+            <tr style="text-align: center">
+              <td colspan="">
+                <i id="email-icon" class="fa-regular fa-envelope fa-2x"></i>
+              </td>
             </tr>
-            <tr style="height: 5px;">
+            <tr style="height: 5px">
               <td colspan="3"></td>
             </tr>
             <tr>
-              <td colspan="3"><input type="text" id="name" placeholder="Name :" /></td>
+              <td colspan="3">
+                <input type="text" id="name" placeholder="Name :" />
+              </td>
             </tr>
-            <tr style="height: 5px;">
+            <tr style="height: 5px">
               <td colspan="3"></td>
             </tr>
             <tr>
-              <td colspan="3"><input type="email" id="email" placeholder="Email :" /></td>
+              <td colspan="3">
+                <input type="email" id="email" placeholder="Email :" />
+              </td>
             </tr>
-            <tr style="height: 5px;">
+            <tr style="height: 5px">
               <td colspan="3"></td>
             </tr>
             <tr>
-              <td colspan="3"><input type="text" id="subject" placeholder="Subject :" /></td>
+              <td colspan="3">
+                <input type="text" id="subject" placeholder="Subject :" />
+              </td>
             </tr>
-            <tr style="height: 5px;">
+            <tr style="height: 5px">
               <td colspan="3"></td>
             </tr>
             <tr>
-              <td colspan="3"><textarea
-                cols="60" rows="5"
-                name="massege"
-                id="massege"
-                placeholder="Message :"
-              ></textarea></td>
+              <td colspan="3">
+                <textarea
+                  cols="60"
+                  rows="5"
+                  name="massege"
+                  id="massege"
+                  placeholder="Message :"
+                ></textarea>
+              </td>
             </tr>
-            <tr style="height: 5px;">
+            <tr style="height: 5px">
               <td colspan="3"></td>
             </tr>
-            <tr style="text-align: center;">
-              <td colspan="3"><button type="submit" onclick="alert('mail send !')">Submit</button></td>
+            <tr style="text-align: center">
+              <td colspan="3">
+                <button type="submit" onclick="alert('mail send !')">
+                  Submit
+                </button>
+              </td>
             </tr>
           </table>
         </div>
@@ -603,40 +638,40 @@
           </div>
           <div>
             <a
-            href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
-            target="_blank"
-            ><i class="fa-brands fa-linkedin fa-2x"></i
-          ></a>
+              href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin fa-2x"></i
+            ></a>
 
-          <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank"
-            ><i class="fa-brands fa-github fa-2x"></i
-          ></a>
+            <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank"
+              ><i class="fa-brands fa-github fa-2x"></i
+            ></a>
 
-          <a
-            href="https://web.facebook.com/profile.php?id=100086889394648"
-            target="_blank"
-            ><i class="fa-brands fa-facebook fa-2x"></i
-          ></a>
+            <a
+              href="https://web.facebook.com/profile.php?id=100086889394648"
+              target="_blank"
+              ><i class="fa-brands fa-facebook fa-2x"></i
+            ></a>
 
-          <a href="https://www.instagram.com/_kalana_w_/" target="_blank"
-            ><i class="fa-brands fa-instagram fa-2x"></i
-          ></a>
+            <a href="https://www.instagram.com/_kalana_w_/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2x"></i
+            ></a>
 
-          <a href="https://www.threads.net/@_kalana_w_" target="_blank"
-            ><i class="fa-brands fa-square-threads fa-2x"></i
-          ></a>
+            <a href="https://www.threads.net/@_kalana_w_" target="_blank"
+              ><i class="fa-brands fa-square-threads fa-2x"></i
+            ></a>
 
-          <a href="https://x.com/Kalana_W_" target="_blank"
-            ><i class="fa-brands fa-x-twitter fa-2x"></i
-          ></a>
+            <a href="https://x.com/Kalana_W_" target="_blank"
+              ><i class="fa-brands fa-x-twitter fa-2x"></i
+            ></a>
 
-          <a href="https://wa.me/+94719524213" target="_blank"
-            ><i class="fa-brands fa-square-whatsapp fa-2x"></i
-          ></a>
+            <a href="https://wa.me/+94719524213" target="_blank"
+              ><i class="fa-brands fa-square-whatsapp fa-2x"></i
+            ></a>
 
-          <a href="https://web.telegram.org/a/" target="_blank"
-            ><i class="fa-brands fa-telegram fa-2x"></i
-          ></a>
+            <a href="https://web.telegram.org/a/" target="_blank"
+              ><i class="fa-brands fa-telegram fa-2x"></i
+            ></a>
           </div>
         </div>
         <p>&copy; 2025 Kalana Warnakulasooriya. All rights reserved.</p>

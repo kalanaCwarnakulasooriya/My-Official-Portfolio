@@ -1,0 +1,105 @@
+/* color code */
+/* 00AD82 */
+header{
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  transition: background-color 0.3s ease;
+}
+
+header ul{
+  font-family: "Oswald", serif;
+  font-size: 1rem;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  & a:hover {
+    border-bottom: 2px solid #222222;
+  }
+}
+
+header a{
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+header ul a:hover{
+  color: #00AD82;
+}
+
+header img{
+  margin: 20px 0 0 40px;
+  width: 100px;
+  transition: opacity 0.3s ease;
+}
+
+header img:hover {
+  opacity: 0.7;
+}
+
+.logo{
+  align-items: center;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  display: flex;
+  text-decoration: none;
+  color: #222222;
+  font-size: 1.5rem;
+  & p{
+    margin-left: -15px;
+  }
+  & span{
+    margin: 40px 0 auto 10px;
+    color: #00AD82;
+  }
+}
+
+#call-btn {
+  margin-right: 30px;
+  font-family: "Oswald", serif;
+  width: 6em;
+  height: 2em;
+  border: 3px ridge #00AD82;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+#call-btn::after {
+  content: "";
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+#call-btn::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  transition: 0.5s;
+}
+
+#call-btn:hover::before, #call-btn:hover::after {
+  transform: scale(0)
+}
+
+#call-btn:hover {
+  box-shadow: inset 0px 0px 20px #00AD82;
+}
+
+#call-btn i {
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
+body{
+  /* overflow: hidden; */
+}
