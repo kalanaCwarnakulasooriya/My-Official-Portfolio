@@ -9,7 +9,7 @@
       content="portfolio, kalana, warnakulasooriya, web developer, software engineer"
     />
 
-    <!-- googleapis -->
+    <!-- Google fonts (googleapis) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,8 +28,9 @@
 
     <title>Kalana Warnakulasooriya | Software Engineer</title>
 
-    <!-- css style sheet -->
+    <!-- css style sheets -->
     <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
     <style>
       table,
       th,
@@ -39,16 +40,17 @@
       }
     </style>
   </head>
+
   <body>
     <header id="main-header">
       <a class="logo" href="/index.html">
-        <img src="/assests/images/logo-bg.png" alt="logo"/>
+        <img src="/assests/images/logo.png" alt="logo" />
         <p>KALE</p>
         <span>x</span>
       </a>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#key_skills">Skills</a></li>
           <li><a href="#education">Education</a></li>
@@ -61,39 +63,40 @@
         <a href="tel:+94719524213">Call Now<i class="fa-solid fa-phone"></i></a>
       </button>
     </header>
+
     <main>
       <section id="hero">
-        <br /><br />
-        <div>
-          <img
-            src="/assests/images/my.png"
-            alt="My main image"
-            style="width: 500px; height: auto"
-          />
-        </div>
-        <div>
-          <h1>Hello <span>!</span></h1>
-          <h2>I'm Kalana Warnakulasooriya</h2>
-          <p>Software Engineer | Full-stack Developer</p>
-          <div>
-            <a
-              href="https://github.com/kalanaCwarnakulasooriya"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github fa-2x"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin fa-2x"></i>
-            </a>
-            <a href="#contact">
-              <button>Hire me</button>
-            </a>
+        <div class="bg"></div>
+        <div class="herogrid">
+          <div class="herotext">
+            <div>
+              <h1 id="greet">Hello <span>!</span></h1>
+              <h2 id="my-name">I'm Kalana Warnakulasooriya</h2>
+              <p>Software Engineer | Full-stack Developer</p>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/kalanaCwarnakulasooriya"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#contact">
+                  <button id="hire-btn">Hire me</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="my-img">
+            <img src="/assests/images/myoriginal.png" alt="My main image" />
           </div>
         </div>
-        <div><i class="fa-solid fa-angle-down"></i></div>
+        <div class="arrow bounce"><i class="fa-solid fa-angle-down"></i></div>
       </section>
 
       <section id="about">
