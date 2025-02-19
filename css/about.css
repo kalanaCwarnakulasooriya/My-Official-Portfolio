@@ -1,6 +1,5 @@
 #about {
   margin: 0;
-  /* background-color: #f3f3f3; */
   padding-top: 20px;
 }
 
@@ -13,6 +12,15 @@
   margin: 0;
   padding: 40px 0 12px 0;
   letter-spacing: 1px;
+}
+
+.sub-heading {
+  text-align: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  color: #7b7b7b;
+  font-size: 0.8rem;
+  margin: 0 0 20px 0;
 }
 
 .aboutGrid{
@@ -91,7 +99,7 @@
 }
 
 .social-icons-about a:hover {
-  color: #00AD82
+  color: #0c9775
 }
 
 .social-icons-about button {
