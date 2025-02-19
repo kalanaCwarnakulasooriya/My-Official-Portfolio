@@ -1,6 +1,6 @@
 /* color code */
 /* 00AD82 */
-header{
+header {
   background-color: transparent;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@ header{
   transition: background-color 0.3s ease;
 }
 
-header ul{
+header ul {
   font-family: "Oswald", serif;
   font-size: 1rem;
   display: flex;
@@ -24,16 +24,16 @@ header ul{
   }
 }
 
-header a{
+header a {
   color: #2e2e2e;
   text-decoration: none;
 }
 
-header ul a:hover{
-  color: #00AD82;
+header ul a:hover {
+  color: #00ad82;
 }
 
-header img{
+header img {
   margin: 20px 0 0 40px;
   width: 100px;
   transition: opacity 0.3s ease;
@@ -43,7 +43,7 @@ header img:hover {
   opacity: 0.7;
 }
 
-.logo{
+.logo {
   align-items: center;
   font-family: "Oswald", serif;
   font-weight: 600;
@@ -51,26 +51,31 @@ header img:hover {
   text-decoration: none;
   color: #222222;
   font-size: 1.5rem;
-  & p{
+  & p {
     margin-left: -15px;
   }
-  & span{
+  & span {
     margin: 40px 0 auto 10px;
-    color: #00AD82;
+    color: #00ad82;
   }
 }
 
 #call-btn {
   margin-right: 30px;
-  font-family: "Oswald", serif;
-  width: 6em;
-  height: 2em;
-  border: 3px ridge #00AD82;
-  background-color: transparent;
-  color: white;
-  transition: 1s;
   border-radius: 0.3em;
+  border: 2px solid #00ad82;
+  width: 8em;
+  height: 2em;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
   font-size: 0.9rem;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: "Oswald", serif;
+  color: #17c3b2;
   cursor: pointer;
 }
 
@@ -82,24 +87,28 @@ header img:hover {
 
 #call-btn::before {
   content: "";
-  transform-origin: center;
+  width: 0;
+  height: 300%;
   position: absolute;
-  transition: 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #00ad82;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
 }
 
-#call-btn:hover::before, #call-btn:hover::after {
-  transform: scale(0)
+#call-btn:hover::before,
+#call-btn:hover::after {
+  width: 105%;
 }
 
 #call-btn:hover {
-  box-shadow: inset 0px 0px 20px #00AD82;
+  color: #111;
 }
 
 #call-btn i {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-left: 8px;
-}
-
-body{
-  /* overflow: hidden; */
 }

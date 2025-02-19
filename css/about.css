@@ -1,0 +1,256 @@
+#about {
+  margin: 0;
+  /* background-color: #f3f3f3; */
+  padding-top: 20px;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Oswald", serif;
+  font-weight: 600;
+  color: #00ad82;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 40px 0 12px 0;
+  letter-spacing: 1px;
+}
+
+.aboutGrid{
+  margin-top: 40px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(1, 1.5fr 2fr 1fr);
+  padding-bottom: 150px;
+}
+
+.aboutText{
+  margin: 80px auto 0 auto;
+}
+
+.aboutText h2{
+  font-family: "Oswald", serif;
+  color: #222222;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 5px;
+}
+
+.aboutText p{
+  padding-top: 20px;
+  margin: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #5e5e5e;
+  line-height: 1.2rem;
+  width: 85%;
+}
+
+.aboutImg{
+  margin: auto;
+}
+
+.overlay {
+  & img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.aboutImg p{
+  text-align: left;
+  color: #222222;
+  margin: 0 0 0 70px;
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}
+
+.aboutImg h2 {
+  font-family: "Oswald", serif;
+  text-align: left;
+  color: #222222;
+  margin: 0;
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.social-icons-about {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin: 30px 0 0 0;
+}
+
+.social-icons-about a {
+  margin:0;
+  font-size: 1.1rem;
+  color: #00AD82
+}
+
+.social-icons-about a:hover {
+  color: #00AD82
+}
+
+.social-icons-about button {
+  font-family: "Oswald", serif;
+  --color: #00AD82;
+  padding: 4px 20px;
+  letter-spacing: 2px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 14px;
+  border-radius: 7px;
+  font-weight: 500;
+}
+
+.social-icons-about button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.social-icons-about button:hover {
+  color: #fff;
+}
+
+.social-icons-about button:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+.social-icons-about button:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.social-icons-about button:active:before {
+  background: #00AD82;
+  transition: background 0s;
+}
+
+.about-line {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  border-radius: 4px;
+  & img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.about-line > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009a;
+  opacity: 0;
+  border-radius: 4px;
+  transition: all 0.5s ease;
+  cursor: copy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  & i {
+    color: #eeeeee;
+    font-size: 1.5rem;
+  }
+  & p {
+    color: #eeeeee;
+    font-family: "inconsolata", sans-serif;
+  }
+}
+.about-line:hover {
+  & > div {
+    opacity: 1;
+  }
+}
+
+#about-img2 {
+  & img {
+    margin: 75px 100px 0 0;
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+}
+
+.download-button {
+  margin-top: 40px;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #17795E;
+  background-color: #00AD82;
+  overflow: hidden;
+}
+
+.download-button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.download-button .button__text {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.download-button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #17795E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.download-button:hover {
+  background: #17795E;
+}
+
+.download-button:hover .button__text {
+  color: transparent;
+}
+
+.download-button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.download-button:active .button__icon {
+  background-color: #146c54;
+}
+
+.download-button:active {
+  border: 1px solid #146c54;
+}
