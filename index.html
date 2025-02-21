@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="/css/header.css"/>
     <link rel="stylesheet" href="/css/hero.css"/>
     <link rel="stylesheet" href="/css/about.css"/>
-    <link rel="stylesheet" href="/css/resume.css"/>
+    <link rel="stylesheet" href="/css/skills.css"/>
+    <link rel="stylesheet" href="/css/project.css">
     <style>
       table,
       th,
@@ -270,8 +271,8 @@
 
       <section id="education">
         <div>
-          <h1>Resume</h1>
-          <p>
+          <h1 class="heading">Resume</h1>
+          <p class="sub-heading">
             Learn more about my professional experience and my qualifications
           </p>
 
@@ -379,56 +380,78 @@
         </div>
       </section>
 
-      <section id="Projects">
-        <div>
-          <h1>Projects</h1>
-          <p>I have worked on a lot of projects. Here are some of them</p>
-          <div>
-            <a
-              href="https://github.com/kalanaCwarnakulasooriya/Tic-Tac-Toe-game"
-              target="_blank"
-              ><img
-                src="/assests/images/tic_tac_toe.png"
-                alt="tic_tac_toe_game"
-                style="width: 300px; height: auto"
-            /></a>
-          </div>
-          <div>
-            <a
-              href="https://github.com/kalanaCwarnakulasooriya/Noize-Medical-Center"
-              target="_blank"
-              ><img
-                src="/assests/images/medical_center.png"
-                alt="tic_tac_toe_game"
-                style="width: 300px; height: auto"
-            /></a>
-          </div>
+      <section id="projects">
+        <h1 class="heading">Projects</h1>
+        <p class="sub-heading">
+          I have worked on a lot of projects. Here are some of them
+        </p>
+        <div id="project-container">
+          <a
+            href="https://github.com/kalanaCwarnakulasooriya/Noize-Medical-Center"
+            target="_blank"
+          >
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github"></i>
+                <h5 class="Topic">Noize Health Care</h5>
+                <p class="Content">Standalone Application</p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://github.com/kalanaCwarnakulasooriya/Tic-Tac-Toe-game"
+            target="_blank"
+          >
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github"></i>
+                <h5 class="Topic">Tic-Tac-Toe Game</h5>
+                <p class="Content">Entertainment</p>
+              </div>
+            </div> </a
+          ><a href="https://shan-movies.web.app/" target="_blank">
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-solid fa-globe"></i>
+                <h5 class="Topic">Movie Hub</h5>
+                <p class="Content">Web Application</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://it-assignment-03-e349b.web.app/" target="_blank">
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-solid fa-globe"></i>
+                <h5 class="Topic">IT Assignment 03</h5>
+                <p class="Content">Web Application</p>
+              </div>
+            </div> </a
+          >
         </div>
       </section>
-
+      
       <section id="experience">
-        <div>
-          <h1>What I do</h1>
-          <p>
+          <h1 class="heading">What I do</h1>
+          <p class="sub-heading">
             Obviously I am a Full stack developer. Experienced with all stages
             of the development
           </p>
-          <div>
-            <div>
+          <div class="services-container">
+            <div class="service-item">
               <img
                 src="/assests/images/enterprise.png"
                 alt="enterprise"
                 style="width: 30px; height: auto"
               />
-              <h1>Enterprise Application</h1>
-              <p>
+              <h1 class="service-topic">Enterprise Application</h1>
+              <p class="desc">
                 Create Modern Enterprise Application that reliable and
                 consistency with awesome ideas.
               </p>
-              <a><h6>Read More</h6></a>
+              <a><h6 class="readmore">Read More</h6></a>
             </div>
 
-            <div>
+            <div class="service-item">
               <img
                 src="/assests/images/web.png"
                 alt="web_application"
@@ -439,10 +462,10 @@
                 Let the whole world know about your brand with unique and
                 performance driven website.
               </p>
-              <a><h6>Read More</h6></a>
+              <a><h6 class="readmore">Read More</h6></a>
             </div>
 
-            <div>
+            <div class="service-item">
               <img
                 src="/assests/images/ui_ux.png"
                 alt="ui_ux"
@@ -453,10 +476,10 @@
                 Create Modern Enterprise Application that reliable and
                 consistency with awesome ideas.
               </p>
-              <a><h6>Read More</h6></a>
+              <a><h6 class="readmore">Read More</h6></a>
             </div>
 
-            <div>
+            <div class="service-item">
               <img
                 src="/assests/images/standalone.png"
                 alt="ui_ux"
@@ -467,10 +490,10 @@
                 Create Modern Enterprise Application that reliable and
                 consistency with awesome ideas.
               </p>
-              <a><h6>Read More</h6></a>
+              <a><h6 class="readmore">Read More</h6></a>
             </div>
 
-            <div>
+            <div class="service-item">
               <img
                 src="/assests/images/freelance.png"
                 alt="ui_ux"
@@ -481,10 +504,10 @@
                 Create Modern Enterprise Application that reliable and
                 consistency with awesome ideas.
               </p>
-              <a><h6>Read More</h6></a>
+              <a><h6 class="readmore">Read More</h6></a>
             </div>
 
-            <div>
+            <div class="service-item">
               <img
                 src="/assests/images/iot.png"
                 alt="ui_ux"
@@ -495,7 +518,7 @@
                 Create Modern Enterprise Application that reliable and
                 consistency with awesome ideas.
               </p>
-              <a><h6>Read More</h6></a>
+              <a><h6 class="readmore">Read More</h6></a>
             </div>
           </div>
         </div>
@@ -564,8 +587,8 @@
             </tr>
           </table>
         </div>
-        <h1>Let's Talk</h1>
-        <p>
+        <h1 class="heading">Let's Talk</h1>
+        <p class="sub-heading">
           Reach out below platforms to ask questions about my work or share your
           ideas.
         </p>
