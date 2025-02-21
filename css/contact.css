@@ -1,0 +1,329 @@
+#contact {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.email-container {
+  margin-top: 50px;
+  width: 768px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid #e2e2e2;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.email-container:hover {
+  box-shadow: 0 0 15px #c5c5c5;
+}
+#email-icon {
+  margin-top: -50px;
+  font-size: 2rem;
+  color: #00ad82;
+  border: 3px solid #00ad82;
+  border-radius: 50%;
+  padding: 6px;
+  margin-bottom: 30px;
+}
+#email,
+#name,
+#subject,
+#massege {
+  margin-top: 20px;
+  width: 90%;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  border: 1px solid #b8b4b4;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+
+  outline-color: #00ad82;
+  outline-width: 1px;
+
+  transition: all 0.3s ease;
+}
+
+#email:hover,
+#name:hover,
+#subject:hover,
+#massege:hover {
+  border: 1px solid #00ad82;
+}
+
+#massege {
+  height: 180px;
+}
+.contact-container {
+  margin: 40px 0 40px 0;
+
+  width: 394px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #e2e2e2;
+
+  transition: box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+  box-shadow: 0 0 15px #c5c5c5;
+}
+
+.contact-container a {
+  text-decoration: none;
+  color: #5e5e5e;
+  width: 100%;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  column-gap: 12px;
+
+  width: 100%;
+
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid #e2e2e2;
+
+  transition: all 0.3s ease;
+}
+.contact-item:hover {
+  box-shadow: 0 0 15px #c5c5c5;
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: #00ad82;
+}
+
+#contact > .social-icons > a {
+  transition: all 0.3s ease-in-out;
+}
+#contact > .social-icons > a:hover {
+  transform: scale(1.15);
+}
+
+#submit-btn {
+  margin-top: 50px;
+  position: relative;
+  padding: 7px 20px;
+  border-radius: 7px;
+  border: 2px solid #00AD82;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #000000;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  /* background: rgb(61, 106, 255); */
+  background: #00AD82;
+  box-shadow: 0 0 30px 5px #00AD82;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+#submit-btn:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+#submit-btn::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+#submit-btn:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+
+.wrapper {
+  display: inline-flex;
+  list-style: none;
+  height: 120px;
+  width: 100%;
+  padding-top: 40px;
+  font-family: "Oswald", serif;
+  justify-content: center;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #fff;
+  border-radius: 50%;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #fff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+  background: #1877f2;
+  color: #fff;
+}
+
+/* .wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+} */
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #c22f4a;
+  color: #fff;
+}
+
+.wrapper .linkedin:hover,
+.wrapper .linkedin:hover .tooltip,
+.wrapper .linkedin:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #111111;
+  color: #fff;
+}
+
+.wrapper .threads:hover,
+.wrapper .threads:hover .tooltip,
+.wrapper .threads:hover .tooltip::before {
+  background: #111111;
+  color: #fff;
+}
+
+.wrapper .x:hover .tooltip,
+.wrapper .x:hover,
+.wrapper .x:hover .tooltip::before {
+  background: #111111;
+  color: #fff;
+}
+
+.wrapper .whatsapp:hover,
+.wrapper .whatsapp:hover .tooltip,
+.wrapper .whatsapp:hover .tooltip::before {
+  background: #04783a;
+  color: #fff;
+}
+
+.wrapper .telegram:hover,
+.wrapper .telegram:hover .tooltip,
+.wrapper .telegram:hover .tooltip::before {
+  background: #1da1f2;
+  color: #fff;
+}
