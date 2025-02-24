@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* width: 100vw; */
 }
 .email-container {
   margin-top: 50px;
@@ -282,14 +283,14 @@
 .wrapper .instagram:hover,
 .wrapper .instagram:hover .tooltip,
 .wrapper .instagram:hover .tooltip::before {
-  background: #c22f4a;
+  background: #c13584;
   color: #fff;
 }
 
 .wrapper .linkedin:hover,
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip::before {
-  background: #1da1f2;
+  background: #0072B1;
   color: #fff;
 }
 
@@ -317,13 +318,13 @@
 .wrapper .whatsapp:hover,
 .wrapper .whatsapp:hover .tooltip,
 .wrapper .whatsapp:hover .tooltip::before {
-  background: #04783a;
+  background: #075e54;
   color: #fff;
 }
 
 .wrapper .telegram:hover,
 .wrapper .telegram:hover .tooltip,
 .wrapper .telegram:hover .tooltip::before {
-  background: #1da1f2;
+  background: #0088cc;
   color: #fff;
 }
