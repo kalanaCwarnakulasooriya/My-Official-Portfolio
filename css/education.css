@@ -1,0 +1,11 @@
+#education {
+  background-color: white;
+  margin: 0;
+}
+#education-img {
+  margin: 60px 0 20px 0;
+  position: relative;
+  left: 800px;
+  transform: translateX(-50%);
+  width: 900px;
+}
