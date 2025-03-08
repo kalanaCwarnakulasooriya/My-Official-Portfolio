@@ -1,673 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalana Warnakulasooriya | Software Engineer</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="This is the home page of portfolio" />
-  <meta name="keywords" content="portfolio, kalana, warnakulasooriya, web developer, software engineer" />
+    <!-- website logo -->
+    <link rel="icon" href="/assests/images/logo.png" />
 
-  <!-- Google fonts (googleapis) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 
-  <!-- awesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/hero.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="/css/resume.css" />
+    <link rel="stylesheet" href="/css/service.css" />
+    <link rel="stylesheet" href="/css/project.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/mobile.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <header id="main-header">
+      <a class="logo" href="/index.html">
+        <img src="/assests/images/logo.png" alt="logo" />
+        <p>KALE X</p>
+      </a>
 
-  <title>Kalana Warnakulasooriya | Software Engineer</title>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="call-btn">
+        <a href="tel:+94768425039"
+          >Call Now<i class="fa-solid fa-phone fa-rotate-270"></i
+        ></a>
+      </button>
+    </header>
+    <main>
+      <section id="hero">
+        <div class="bg"></div>
+        <div class="herogrid">
+          <div id="hero-text">
+            <div>
+              <h1 id="greet">Hello <span>!</span></h1>
+              <h2 id="myname">I'm Kalana Warnakulasooriya</h2>
+              <p>Software Engineer | Full-stack Developer</p>
+              <div class="social-icons">
+                <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank">
+                  <i class="fa-brands fa-github fa-2x"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin fa-2x"></i>
+                </a>
+                <a href="#contact">
+                  <button class="btn-section" type="menu">Hire me</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div id="hero-img">
+            <img src="/assests/images/myoriginal.png" alt="" />
+          </div>
+        </div>
+        <div class="arrow bounce"><i class="fa-solid fa-angle-down"></i></div>
+      </section>
 
-  <!-- css style sheets -->
-  <link rel="stylesheet" href="/css/header.css" />
-  <link rel="stylesheet" href="/css/hero.css" />
-  <link rel="stylesheet" href="/css/about.css" />
-  <link rel="stylesheet" href="/css/skills.css" />
-  <link rel="stylesheet" href="/css/project.css">
-  <link rel="stylesheet" href="/css/experience.css">
-  <link rel="stylesheet" href="/css/contact.css">
-  <link rel="stylesheet" href="/css/footer.css">
-  <link rel="stylesheet" href="/css/education.css">
-  <style>
-    table,
-    th,
-    td {
-      border: 1px solid black;
-      border-collapse: collapse;
-    }
-  </style>
-</head>
-
-<body>
-  <header id="main-header">
-    <a class="logo" href="/index.html">
-      <img src="/assests/images/logo.png" alt="logo" />
-      <p>KALE</p>
-      <span>x</span>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#Projects">Work</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <button id="call-btn">
-      <a href="tel:+94719524213">Call Now<i class="fa-solid fa-phone"></i></a>
-    </button>
-  </header>
-
-  <main>
-    <section id="hero">
-      <div class="bg"></div>
-      <div class="herogrid">
-        <div class="herotext">
-          <div>
-            <h1 id="greet">Hello <span>!</span></h1>
-            <h2 id="my-name">I'm Kalana Warnakulasooriya</h2>
-            <p>Software Engineer | Full-stack Developer</p>
+      <section id="about">
+        <h1 class="heading">Who I am</h1>
+        <div id="about-grid">
+          <div id="about-img">
+            <p>Hello There 👋 I'm</p>
+            <h2>Kalana Warnakulasooriya</h2>
+            <div class="overlay">
+              <img src="/assests/images/my2.jpg" alt="" />
+            </div>
+          </div>
+          <div id="about-text">
+            <h2>I’m a Passionate Full Stack Developer</h2>
+            <p>
+              Hello I am Kalana Warnakulasooriya. I began my Software engineer
+              life in 2023. I have spent most of my waking hours for the last
+              years designing, programming and operating websites.
+            </p>
+            <p>
+              I have acquired the skills and knowledge necessary to make your
+              project a success. I enjoy every step of the design process, from
+              discussion and collaboration.
+            </p>
+            <p>Looking forward to connecting with you!<br /></p>
             <div class="social-icons">
               <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank">
                 <i class="fa-brands fa-github fa-2x"></i>
               </a>
-              <a href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
+                target="_blank"
+              >
                 <i class="fa-brands fa-linkedin fa-2x"></i>
               </a>
-              <a href="#contact">
-                <button id="hire-btn">Hire me</button>
+              <a href="#projects">
+                <button class="btn-section" type="menu">Projects</button> </a
+              ><a href="#contact">
+                <button class="btn-section" type="menu">Contact</button>
               </a>
             </div>
           </div>
-        </div>
-        <div id="my-img">
-          <img src="/assests/images/myoriginal.png" alt="My-main-image" />
-        </div>
-      </div>
-    </section>
 
-    <section id="about">
-      <h1 class="heading">Who I am</h1>
-      <div class="aboutGrid">
-        <div class="aboutImg">
-          <p>Hello There 👋 I'm</p>
-          <h2>Kalana Warnakulasooriya</h2>
-          <div class="overlay">
-            <img src="/assests/images/my2.jpg" alt="About-img" />
+          <div id="about-img2">
+            <div class="about-line">
+              <div>
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <p>Download CV</p>
+              </div>
+              <img src="/assests/images/my2.jpg" alt="" />
+            </div>
           </div>
         </div>
-        <div class="aboutText">
-          <h2>I’m a Passionate Full Stack Developer</h2>
-          <p>
-            Hello I am Kalana Warnakulasooriya. I began my Software engineer
-            life in 2023. I have spent most of my waking hours for the last
-            years designing, programming and operating websites.
+      </section>
+
+      <section id="resume">
+        <div id="key-skill">
+          <h1 class="heading">Key Skills</h1>
+          <p class="sub-heading">
+            What interests me in my work and how my work can benefit you
           </p>
-          <p>
-            I have acquired the skills and knowledge necessary to make your
-            project a success. I enjoy every step of the design process, from
-            discussion and collaboration.
-          </p>
-          <p>Looking forward to connecting with you!<br /></p>
-          <div class="social-icons-about">
-            <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank">
-              <i class="fa-brands fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/" target="_blank">
-              <i class="fa-brands fa-linkedin fa-2x"></i>
-            </a>
-            <a href="#contact">
-              <button>Contact</button>
-            </a>
-            <a href="#projects"><button>Projects</button></a>
+          <div class="skill-container">
+            <div class="grid-item">
+              <div class="Logo">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+
+              <h1 class="Topic">Awesome Ideas</h1>
+
+              <p class="Content">
+                Present awesome ideas while engaging projects
+              </p>
+            </div>
+
+            <div class="grid-item">
+              <div class="Logo">
+                <i class="fa-solid fa-comment-dots"></i>
+              </div>
+
+              <h1 class="Topic">Communication</h1>
+
+              <p class="Content">Friendly and Quality Communication</p>
+            </div>
+
+            <div class="grid-item">
+              <div class="Logo">
+                <i class="fa-solid fa-ranking-star"></i>
+              </div>
+
+              <h1 class="Topic">High Quality</h1>
+
+              <p class="Content">
+                Maintaining the quality and the neat of the project
+              </p>
+            </div>
+
+            <div class="grid-item">
+              <div class="Logo">
+                <i class="fa-solid fa-business-time"></i>
+              </div>
+
+              <h1 class="Topic">Working on Time</h1>
+
+              <p class="Content">Finalise projects on time and high accuracy</p>
+            </div>
           </div>
-          <button class="download-button" type="button">
-            <span class="button__text">Download</span>
-            <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35"
-                id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg">
-                <path
-                  d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z">
-                </path>
-                <path
-                  d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z">
-                </path>
-                <path
-                  d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z">
-                </path>
-              </svg></span>
+        </div>
+        <h1 class="heading">Resume</h1>
+        <p class="sub-heading">
+          Learn more about my professional experience and my qualifications
+        </p>
+        <div>
+          <img
+            id="resume-img"
+            src="/assests/images/education.png"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <section id="services">
+        <h1 class="heading">What I do</h1>
+        <p class="sub-heading">
+          Obviously I am a Full stack developer. Experienced with all stages of
+          the development
+        </p>
+        <div class="services-container">
+          <div class="service-item">
+            <img src="/assests/images/enterprise.png" alt="" />
+            <h1 class="service-topic">Enterprise Application</h1>
+            <p class="desc">
+              Create Modern Enterprise Application that reliable and consistency
+              with awesome ideas.
+            </p>
+            <a><h6 class="readmore">Read More</h6></a>
+          </div>
+          <div class="service-item">
+            <img src="/assests/images/web.png" alt="" />
+            <h1 class="service-topic">Web Application</h1>
+            <p class="desc">
+              Let the whole world know about your brand with unique and
+              performance driven website.
+            </p>
+            <a><h6 class="readmore">Read More</h6></a>
+          </div>
+          <div class="service-item">
+            <img src="/assests/images/ui_ux.png" alt="" />
+            <h1 class="service-topic">UI/UX Designing</h1>
+            <p class="desc">
+              Create Modern Enterprise Application that reliable and consistency
+              with awesome ideas.
+            </p>
+            <a><h6 class="readmore">Read More</h6></a>
+          </div>
+          <div class="service-item">
+            <img src="/assests/images/standalone.png" alt="" />
+            <h1 class="service-topic">Standalone Application</h1>
+            <p class="desc">
+              Create Modern Enterprise Application that reliable and consistency
+              with awesome ideas.
+            </p>
+            <a><h6 class="readmore">Read More</h6></a>
+          </div>
+          <div class="service-item">
+            <img src="/assests/images/freelance.png" alt="" />
+            <h1 class="service-topic">Freelancing</h1>
+            <p class="desc">
+              Create Modern Enterprise Application that reliable and consistency
+              with awesome ideas.
+            </p>
+            <a><h6 class="readmore">Read More</h6></a>
+          </div>
+          <div class="service-item">
+            <img src="/assests/images/iot.png" alt="" />
+            <h1 class="service-topic">IOT Based Application</h1>
+            <p class="desc">
+              Create Modern Enterprise Application that reliable and consistency
+              with awesome ideas.
+            </p>
+            <a><h6 class="readmore">Read More</h6></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1 class="heading">Projects</h1>
+        <p class="sub-heading">
+          I have worked on a lot of projects. Here are some of them
+        </p>
+        <div id="project-container">
+          <a
+            href="https://github.com/kalanaCwarnakulasooriya/Noize-Medical-Center.git"
+            target="_blank"
+          >
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github"></i>
+                <h5 class="Topic">Noize Medical Center</h5>
+                <p class="Content">Standalone Application</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://royal-sanchez-hotel.web.app/" target="_blank">
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-solid fa-globe"></i>
+                <h5 class="Topic">Marino Hotel</h5>
+                <p class="Content">Web Application</p>
+              </div>
+            </div> </a
+          ><a
+            href="https://github.com/kalanaCwarnakulasooriya/Tic-Tac-Toe-game.git"
+            target="_blank"
+          >
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-brands fa-github"></i>
+                <h5 class="Topic">Tic Tac Toe Game</h5>
+                <p class="Content">Entertainment</p>
+              </div>
+            </div> </a
+          ><a href="https://shan-movies.web.app/" target="_blank">
+            <div class="project-item">
+              <div class="project-overlay">
+                <i class="fa-solid fa-globe"></i>
+                <h5 class="Topic">Movie Hub</h5>
+                <p class="Content">Web Application</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1 class="heading">Get In Touch</h1>
+        <p class="sub-heading">
+          Feel free to connect with me! Reach out for inquiries, collaboration,
+          or support
+        </p>
+        <div class="email-container">
+          <i id="email-icon" class="fa-regular fa-envelope"></i>
+          <input type="text" id="name" placeholder="Name :" />
+          <input type="email" id="email" placeholder="Email :" />
+          <input type="text" id="subject" placeholder="Subject :" />
+          <textarea
+            name="massege"
+            id="massege"
+            placeholder="Message :"
+          ></textarea>
+          <button
+            class="btn-section"
+            type="submit"
+            onclick="alert('mail send !')"
+          >
+            Submit
           </button>
         </div>
-        <div id="about-img2">
-          <div class="about-line">
-            <img src="/assests/images/my2.jpg" alt="About-img-2" />
+        <h1 class="heading">Let's Talk</h1>
+        <p class="sub-heading">
+          Reach out below platforms to ask questions about my work or share your
+          ideas.
+        </p>
+        <div class="social-icons">
+          <!-- <a
+            href="https://www.linkedin.com/in/avindu-tharushan-b63548321/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin fa-2x"></i
+          ></a>
+          <a href="https://github.com/avindutharushan" target="_blank"
+            ><i class="fa-brands fa-github fa-2x"></i
+          ></a>
+          <a href="https://www.facebook.com/avindu.tharushan/" target="_blank"
+            ><i class="fa-brands fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://www.instagram.com/avindu_tharushan/" target="_blank"
+            ><i class="fa-brands fa-instagram fa-2x"></i
+          ></a> -->
+
+          <ul class="wrapper">
+            <a href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/">
+              <li class="icon linkedin">
+                <span class="tooltip">LinkedIn</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1.2em" fill="currentColor"
+                  class="linkedin">
+                  <path
+                    d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.2 0 53.51S24.09-1 53.79-1s53.79 24.89 53.79 54.51-24.08 54.59-53.79 54.59zM447.9 448h-92.68V312c0-32.4-.62-74.1-45.1-74.1-45.1 0-52.1 35.2-52.1 71.6V448h-92.7V148.9h89v40.9h1.3c12.4-23.5 42.7-48.3 88-48.3 94 0 111.4 61.9 111.4 142.3V448z" />
+                </svg>
+              </li>
+            </a>
+            <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank">
+              <li class="icon github">
+                <span class="tooltip">GitHub</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="1.2em" fill="currentColor"
+                  class="github">
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5 3.6-2.7 0-5-1.6-5-3.6 0-2 2.3-3.6 5-3.6 2.8 0 5 1.6 5 3.6zm-20.4-3.2c-.7 1.6-2.7 2.3-4.5 1.6-1.8-.7-2.7-2.7-2-4.3.7-1.6 2.7-2.3 4.5-1.6 1.8.8 2.8 2.8 2 4.3zm15.7-1.3c-.9 1.5-3 2-4.7 1.2-1.8-.8-2.6-2.7-1.7-4.2.9-1.5 3-2 4.7-1.2 1.7.8 2.5 2.7 1.7 4.2zM244 0C109.3 0 0 109.3 0 244c0 107.9 69.9 199.5 167 231.7 12.2 2.2 16.7-5.3 16.7-11.8 0-5.9-.2-21.5-.3-42.1-68 14.8-82.3-32.8-82.3-32.8-11.1-28.1-27.2-35.6-27.2-35.6-22.2-15.1 1.7-14.8 1.7-14.8 24.6 1.7 37.6 25.3 37.6 25.3 21.8 37.3 57.2 26.6 71.2 20.4 2.2-15.8 8.5-26.6 15.4-32.7-54.2-6.2-111.2-27.1-111.2-120.4 0-26.6 9.5-48.3 25.3-65.3-2.5-6.2-11-31.1 2.4-64.8 0 0 20.5-6.6 67.2 24.9 19.5-5.4 40.4-8.1 61.2-8.2 20.8.1 41.7 2.8 61.2 8.2 46.6-31.5 67.2-24.9 67.2-24.9 13.4 33.7 4.9 58.6 2.4 64.8 15.7 17 25.2 38.7 25.2 65.3 0 93.5-57.1 114.1-111.4 120.2 8.7 7.5 16.4 22.4 16.4 45.1 0 32.6-.3 58.9-.3 66.9 0 6.6 4.4 14.1 16.8 11.7C426.1 443.4 496 351.8 496 244 496 109.3 386.7 0 252 0z" />
+                </svg>
+              </li>
+            </a>
+            <a href="https://web.facebook.com/profile.php?id=100086889394648" target="_blank">
+              <li class="icon facebook">
+                <span class="tooltip">Facebook</span>
+                <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                  </path>
+                </svg>
+              </li>
+            </a>
+            <!-- <li class="icon twitter">
+                <span class="tooltip">Twitter</span>
+                <svg
+                  height="1.8em"
+                  fill="currentColor"
+                  viewBox="0 0 48 48"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="twitter"
+                >
+                  <path
+                    d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
+                  ></path>
+                </svg>
+              </li> -->
+            <a href="https://www.instagram.com/_kalana_w_/" target="_blank">
+              <li class="icon instagram">
+                <span class="tooltip">Instagram</span>
+                <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
+                  </path>
+                </svg>
+              </li>
+            </a>
+            <!-- <a href="https://www.threads.net/@_kalana_w_" target="_blank">
+              <li class="icon threads">
+                <span class="tooltip">Threads</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor"
+                  class="threads">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59c-.29.26-.67.41-1.07.41h-2.22c-.55 0-1-.45-1-1V12c0-1.1.9-2 2-2h1.22c.56 0 1.08.45 1.08 1v2c0 .28-.11.55-.31.78z" />
+                </svg>
+              </li>
+            </a> -->
+            <a href="https://x.com/Kalana_W_" target="_blank">
+              <li class="icon x">
+                <span class="tooltip">X</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor" class="x">
+                  <path d="M23.5 0h-3.8L14 7.6 8.3 0H0l10 12.8L0 24h3.8l6.2-7.6 5.7 7.6H24L14 11.2 23.5 0z" />
+                </svg>
+              </li>
+            </a>
+            <!-- <a href="https://wa.me/+94719524213" target="_blank">
+              <li class="icon whatsapp">
+                <span class="tooltip">WhatsApp</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor"
+                  class="whatsapp">
+                  <path
+                    d="M12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.2-1.5C8 23.5 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0zm5.7 16.6c-.2.6-1.1 1-1.9 1.1-.5 0-1.1.1-3.5-1.4-3-1.8-4.8-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.2-2.5c.4-.3.8-.4 1.1-.4.2 0 .4 0 .6 0 .2 0 .5-.1.8.6.3.7 1.1 2.6 1.2 2.8.1.2.1.4 0 .6-.1.2-.2.3-.4.5s-.4.5-.6.6c-.2.1-.4.3-.2.6.3.5 1.3 2.1 2.9 3.3 2 .1 2.3-1.5 2.7-1.3.4.2 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1.6-.1 1.2z" />
+                </svg>
+              </li>
+            </a> -->
+            <!-- <a href="https://web.telegram.org/a/" target="_blank">
+              <li class="icon telegram">
+                <span class="tooltip">Telegram</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor"
+                  class="telegram">
+                  <path
+                    d="M9.6 14.2l-.4 5c.6 0 .9-.3 1.2-.6l2.8-2.6 5.8 4.3c1 .5 1.7.2 2-.9L24 3.9c.3-1.2-.5-1.7-1.4-1.3L1 10.5c-1.2.5-1.2 1.2 0 1.5l5.6 1.7 13-8c.6-.4 1-.2.5.2l-10 8.3z" />
+                </svg>
+              </li>
+            </a> -->
+          </ul>
+
+
+        </div>
+        <div class="contact-container">
+          <a href="tel:+94719524213"
+            ><div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <p>+9471 952 4213</p>
+            </div></a
+          >
+          <a href="mailto:kalana.warnakulasooriya@gmail.com"
+            ><div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <p>kalana.warnakulasooriya@gmail.com</p>
+            </div></a
+          >
+          <a href="https://wa.me/+94768425039"
+            ><div class="contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <p>+9471 952 4213</p>
+            </div></a
+          >
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2519.223038687848!2d80.30973204907089!3d6.0046449635963155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2slk!4v1730108894652!5m2!1sen!2slk"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
+        </div>
+        <p class="sub-heading">Looking forward to connecting with you!</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <h1>Kalana’s Portfolio</h1>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://web.facebook.com/profile.php?id=100086889394648" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/_kalana_w_/"
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://x.com/Kalana_W_" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
       </div>
-    </section>
-
-    <section id="skills">
-      <div id="key-skills">
-        <h1 class="heading">Key Skills & Abilities</h1>
-        <p class="sub-heading">What interests me in my work and how my work can benefit you</p>
-        <div class="skill-container">
-          <div id="grid-item">
-            <div class="skill-logo">
-              <i class="fa-solid fa-lightbulb"></i>
-            </div>
-            <h1 class="topic">Awesome Ideas</h1>
-
-            <p class="content">Present awesome ideas while engaging projects</p>
-          </div>
-
-          <div id="grid-item">
-            <div class="skill-logo">
-              <i class="fa-solid fa-comment-dots"></i>
-            </div>
-
-            <h1 class="topic">Communication</h1>
-
-            <p class="content">Friendly and Quality Communication</p>
-          </div>
-
-          <div id="grid-item">
-            <div class="skill-logo">
-              <i class="fa-solid fa-ranking-star"></i>
-            </div>
-
-            <h1 class="topic">High Quality</h1>
-
-            <p class="content">Maintaining the quality and the neat of the project</p>
-          </div>
-
-          <div id="grid-item">
-            <div class="skill-logo">
-              <i class="fa-solid fa-business-time"></i>
-            </div>
-
-            <h1 class="topic">Working on Time</h1>
-
-            <p class="content">Finalise projects on time and high accuracy</p>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-java"></i>
-            </div>
-
-            <h1 class="topic-abilities">Java</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-solid fa-database"></i>
-            </div>
-
-            <h1 class="topic-abilities">MySQL</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-node"></i>
-            </div>
-
-            <h1 class="topic-abilities">NodeJS</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-html5"></i>
-            </div>
-
-            <h1 class="topic-abilities">HTML5</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-github"></i>
-            </div>
-
-            <h1 class="topic-abilities">GitHub</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-
-            <h1 class="topic-abilities">CSS3</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-bootstrap"></i>
-            </div>
-
-            <h1 class="topic-abilities">Bootstrap</h1>
-          </div>
-
-          <div id="grid-item-abilities">
-            <div class="logo-abilities">
-              <i class="fa-brands fa-python"></i>
-            </div>
-
-            <h1 class="topic-abilities">Python</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education">
-      <h1 class="heading">Resume</h1>
-      <p class="sub-heading">
-        Learn more about my professional experience and my qualifications
-      </p>
-      <img src="/assests/images/education.png" alt="education" id="education-img" />
-
-      <!-- <div id="ijse">
-          <div>
-            <img src="/assests/images/ijse.png" alt="ijse_logo" style="width: 100px; height: auto" />
-          </div>
-          <h5>Institute of Software Engineering</h5>
-          <p>2024 - 2025</p>
-        </div>
-
-        <div id="ijse-text">
-          <h3>Demonstrator & Junior Lecturer</h3>
-          <p>
-            Guiding aspiring software engineers with lectures fostering skills
-            and sharing insight in a supportive educational environment.
-          </p>
-        </div>
-
-        <div id="gdse-text">
-          <h3>Graduate Diploma in Software Engineering</h3>
-          <p>
-            Complete a Graduate Diploma in Software Engineering, focus on
-            software development methodologies, system design, and project
-            management equipping me with a solid foundation for a
-            career in technology.
-          </p>
-        </div>
-
-        <div id="gdse">
-          <div>
-            <img src="/assests/images/gdse.png" alt="gdse_logo" style="width: 100px; height: auto" />
-          </div>
-          <h5>Institute of Software Engineering</h5>
-          <p>2024 - 2025</p>
-        </div>
-
-        <div id="whc">
-          <div>
-            <img src="/assests/images/whc.png" alt="whc_logo" style="width: 100px; height: auto" />
-          </div>
-          <h5>Walisinghe Harischandra College</h5>
-          <p>2019 - 2021</p>
-        </div>
-
-        <div id="whc-text-AL">
-          <h3>Walisinghe Harischandra College</h3>
-          <p>
-            Successfully completed the Advanced Level (AL) Examination in
-            maths scheme, specializing in relevant subjects that deepened my
-            knowledge and prepared me for higher education and
-            professional challenges.
-          </p>
-        </div>
-
-        <div id="whc-text-OL">
-          <h3>Walisinghe Harischandra College</h3>
-          <p>
-            Achieved success in the Ordinary Level (OL) Examination,
-            demonstrating proficiency in foundational subjects including ICT
-            and a commitment to academic excellence.
-          </p>
-        </div>
-
-        <div id="whc">
-          <div>
-            <img src="/assests/images/whc.png" alt="whc_logo" style="width: 100px; height: auto" />
-          </div>
-          <h5>Walisinghe Harischandra College</h5>
-          <p>2013 - 2018</p>
-        </div>
-
-        <div id="ds">
-          <div>
-            <img src="/assests/images/ds.png" alt="ds_logo" style="width: 75px; height: auto" />
-          </div>
-          <h5>D S Senanayake College</h5>
-          <p>2008 - 2012</p>
-        </div>
-
-        <div id="ds-text">
-          <h3>D S Senanayake College</h3>
-          <p>Achieved a great success in the Scholarship Exam</p>
-        </div>
-      </div> -->
-    </section>
-
-    <section id="projects">
-      <h1 class="heading">Projects</h1>
-      <p class="sub-heading">
-        I have worked on a lot of projects. Here are some of them
-      </p>
-      <div id="project-container">
-        <a href="https://github.com/kalanaCwarnakulasooriya/Noize-Medical-Center" target="_blank">
-          <div class="project-item">
-            <div class="project-overlay">
-              <i class="fa-brands fa-github"></i>
-              <h5 class="Topic">Noize Health Care</h5>
-              <p class="Content">Standalone Application</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://github.com/kalanaCwarnakulasooriya/Tic-Tac-Toe-game" target="_blank">
-          <div class="project-item">
-            <div class="project-overlay">
-              <i class="fa-brands fa-github"></i>
-              <h5 class="Topic">Tic-Tac-Toe Game</h5>
-              <p class="Content">Entertainment</p>
-            </div>
-          </div>
-        </a><a href="https://shan-movies.web.app/" target="_blank">
-          <div class="project-item">
-            <div class="project-overlay">
-              <i class="fa-solid fa-globe"></i>
-              <h5 class="Topic">Movie Hub</h5>
-              <p class="Content">Web Application</p>
-            </div>
-          </div>
-        </a>
-        <a href="https://it-assignment-03-e349b.web.app/" target="_blank">
-          <div class="project-item">
-            <div class="project-overlay">
-              <i class="fa-solid fa-globe"></i>
-              <h5 class="Topic">IT Assignment 03</h5>
-              <p class="Content">Web Application</p>
-            </div>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section id="experience">
-      <h1 class="heading">What I do</h1>
-      <p class="sub-heading">
-        Obviously I am a Full stack developer. Experienced with all stages
-        of the development
-      </p>
-      <div class="services-container">
-        <div class="service-item">
-          <img src="/assests/images/enterprise.png" alt="enterprise" style="width: 30px; height: auto" />
-          <h1 class="service-topic">Enterprise Application</h1>
-          <p class="desc">
-            Create Modern Enterprise Application that reliable and
-            consistency with awesome ideas.
-          </p>
-          <a href="https://github.com/kalanaCwarnakulasooriya?tab=repositories" target="_blank">
-            <h6 class="readmore">Read More</h6>
-          </a>
-        </div>
-
-        <div class="service-item">
-          <img src="/assests/images/web.png" alt="web_application" style="width: 30px; height: auto" />
-          <h1>Web Application</h1>
-          <p>
-            Let the whole world know about your brand with unique and
-            performance driven website.
-          </p>
-          <a href="https://github.com/kalanaCwarnakulasooriya?tab=repositories" target="_blank">
-            <h6 class="readmore">Read More</h6>
-          </a>
-        </div>
-
-        <div class="service-item">
-          <img src="/assests/images/ui_ux.png" alt="ui_ux" style="width: 30px; height: auto" />
-          <h1>UI/UX Designing</h1>
-          <p>
-            Create Modern Enterprise Application that reliable and
-            consistency with awesome ideas.
-          </p>
-          <a href="https://github.com/kalanaCwarnakulasooriya?tab=repositories" target="_blank">
-            <h6 class="readmore">Read More</h6>
-          </a>
-        </div>
-
-        <div class="service-item">
-          <img src="/assests/images/standalone.png" alt="ui_ux" style="width: 30px; height: auto" />
-          <h1>Standalone Application</h1>
-          <p>
-            Create Modern Enterprise Application that reliable and
-            consistency with awesome ideas.
-          </p>
-          <a href="https://github.com/kalanaCwarnakulasooriya?tab=repositories" target="_blank">
-            <h6 class="readmore">Read More</h6>
-          </a>
-        </div>
-
-        <div class="service-item">
-          <img src="/assests/images/freelance.png" alt="ui_ux" style="width: 30px; height: auto" />
-          <h1>Freelancing</h1>
-          <p>
-            Create Modern Enterprise Application that reliable and
-            consistency with awesome ideas.
-          </p>
-          <a href="https://github.com/kalanaCwarnakulasooriya?tab=repositories" target="_blank">
-            <h6 class="readmore">Read More</h6>
-          </a>
-        </div>
-
-        <div class="service-item">
-          <img src="/assests/images/iot.png" alt="ui_ux" style="width: 30px; height: auto" />
-          <h1>IOT Based Application</h1>
-          <p>
-            Create Modern Enterprise Application that reliable and
-            consistency with awesome ideas.
-          </p>
-          <a href="https://github.com/kalanaCwarnakulasooriya?tab=repositories" target="_blank">
-            <h6 class="readmore">Read More</h6>
-          </a>
-        </div>
-      </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h1 class="heading">Get In Touch</h1>
-      <p class="sub-heading">
-        Feel free to connect with me! Reach out for inquiries, collaboration,
-        or support
-      </p>
-      <div class="email-container">
-        <i id="email-icon" class="fa-regular fa-envelope"></i>
-        <input type="text" id="name" placeholder="Name :" />
-        <input type="email" id="email" placeholder="Email :" />
-        <input type="text" id="subject" placeholder="Subject :" />
-        <textarea name="massege" id="massege" placeholder="Message :"></textarea>
-        <button id="submit-btn" type="submit" onclick="alert('mail send !')">
-          Submit
-        </button>
-      </div>
-      <h1 class="heading">Let's Talk</h1>
-      <p class="sub-heading">
-        Reach out below platforms to ask questions about my work or share your
-        ideas.
-      </p>
-      <div class="social-icons">
-
-        <ul class="wrapper">
-          <a href="https://web.facebook.com/profile.php?id=100086889394648" target="_blank">
-            <li class="icon facebook">
-              <span class="tooltip">Facebook</span>
-              <svg viewBox="0 0 320 512" height="1.2em" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                </path>
-              </svg>
-            </li>
-          </a>
-
-          <!-- <li class="icon twitter">
-              <span class="tooltip">Twitter</span>
-              <svg
-                height="1.8em"
-                fill="currentColor"
-                viewBox="0 0 48 48"
-                xmlns="http://www.w3.org/2000/svg"
-                class="twitter"
-              >
-                <path
-                  d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"
-                ></path>
-              </svg>
-            </li> -->
-          <a href="https://www.instagram.com/_kalana_w_/" target="_blank">
-            <li class="icon instagram">
-              <span class="tooltip">Instagram</span>
-              <svg xmlns="http://www.w3.org/2000/svg" height="1.2em" fill="currentColor" class="bi bi-instagram"
-                viewBox="0 0 16 16">
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z">
-                </path>
-              </svg>
-            </li>
-          </a>
-
-          <a href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/">
-            <li class="icon linkedin">
-              <span class="tooltip">LinkedIn</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" height="1.2em" fill="currentColor"
-                class="linkedin">
-                <path
-                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.2 0 53.51S24.09-1 53.79-1s53.79 24.89 53.79 54.51-24.08 54.59-53.79 54.59zM447.9 448h-92.68V312c0-32.4-.62-74.1-45.1-74.1-45.1 0-52.1 35.2-52.1 71.6V448h-92.7V148.9h89v40.9h1.3c12.4-23.5 42.7-48.3 88-48.3 94 0 111.4 61.9 111.4 142.3V448z" />
-              </svg>
-            </li>
-          </a>
-          <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank">
-            <li class="icon github">
-              <span class="tooltip">GitHub</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" height="1.2em" fill="currentColor"
-                class="github">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5 3.6-2.7 0-5-1.6-5-3.6 0-2 2.3-3.6 5-3.6 2.8 0 5 1.6 5 3.6zm-20.4-3.2c-.7 1.6-2.7 2.3-4.5 1.6-1.8-.7-2.7-2.7-2-4.3.7-1.6 2.7-2.3 4.5-1.6 1.8.8 2.8 2.8 2 4.3zm15.7-1.3c-.9 1.5-3 2-4.7 1.2-1.8-.8-2.6-2.7-1.7-4.2.9-1.5 3-2 4.7-1.2 1.7.8 2.5 2.7 1.7 4.2zM244 0C109.3 0 0 109.3 0 244c0 107.9 69.9 199.5 167 231.7 12.2 2.2 16.7-5.3 16.7-11.8 0-5.9-.2-21.5-.3-42.1-68 14.8-82.3-32.8-82.3-32.8-11.1-28.1-27.2-35.6-27.2-35.6-22.2-15.1 1.7-14.8 1.7-14.8 24.6 1.7 37.6 25.3 37.6 25.3 21.8 37.3 57.2 26.6 71.2 20.4 2.2-15.8 8.5-26.6 15.4-32.7-54.2-6.2-111.2-27.1-111.2-120.4 0-26.6 9.5-48.3 25.3-65.3-2.5-6.2-11-31.1 2.4-64.8 0 0 20.5-6.6 67.2 24.9 19.5-5.4 40.4-8.1 61.2-8.2 20.8.1 41.7 2.8 61.2 8.2 46.6-31.5 67.2-24.9 67.2-24.9 13.4 33.7 4.9 58.6 2.4 64.8 15.7 17 25.2 38.7 25.2 65.3 0 93.5-57.1 114.1-111.4 120.2 8.7 7.5 16.4 22.4 16.4 45.1 0 32.6-.3 58.9-.3 66.9 0 6.6 4.4 14.1 16.8 11.7C426.1 443.4 496 351.8 496 244 496 109.3 386.7 0 252 0z" />
-              </svg>
-            </li>
-          </a>
-          <a href="https://www.threads.net/@_kalana_w_" target="_blank">
-            <li class="icon threads">
-              <span class="tooltip">Threads</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor"
-                class="threads">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm5 13.59c-.29.26-.67.41-1.07.41h-2.22c-.55 0-1-.45-1-1V12c0-1.1.9-2 2-2h1.22c.56 0 1.08.45 1.08 1v2c0 .28-.11.55-.31.78z" />
-              </svg>
-            </li>
-          </a>
-          <a href="https://x.com/Kalana_W_" target="_blank">
-            <li class="icon x">
-              <span class="tooltip">X</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor" class="x">
-                <path d="M23.5 0h-3.8L14 7.6 8.3 0H0l10 12.8L0 24h3.8l6.2-7.6 5.7 7.6H24L14 11.2 23.5 0z" />
-              </svg>
-            </li>
-          </a>
-          <a href="https://wa.me/+94719524213" target="_blank">
-            <li class="icon whatsapp">
-              <span class="tooltip">WhatsApp</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor"
-                class="whatsapp">
-                <path
-                  d="M12 0C5.4 0 0 5.4 0 12c0 2.1.5 4.1 1.5 5.9L0 24l6.2-1.5C8 23.5 10 24 12 24c6.6 0 12-5.4 12-12S18.6 0 12 0zm5.7 16.6c-.2.6-1.1 1-1.9 1.1-.5 0-1.1.1-3.5-1.4-3-1.8-4.8-4.3-5-4.5-.2-.2-1.2-1.6-1.2-3.1s.8-2.2 1.2-2.5c.4-.3.8-.4 1.1-.4.2 0 .4 0 .6 0 .2 0 .5-.1.8.6.3.7 1.1 2.6 1.2 2.8.1.2.1.4 0 .6-.1.2-.2.3-.4.5s-.4.5-.6.6c-.2.1-.4.3-.2.6.3.5 1.3 2.1 2.9 3.3 2 .1 2.3-1.5 2.7-1.3.4.2 2.3 1.1 2.7 1.3.4.2.7.3.8.5.1.2.1.6-.1 1.2z" />
-              </svg>
-            </li>
-          </a>
-          <a href="https://web.telegram.org/a/" target="_blank">
-            <li class="icon telegram">
-              <span class="tooltip">Telegram</span>
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="1.2em" fill="currentColor"
-                class="telegram">
-                <path
-                  d="M9.6 14.2l-.4 5c.6 0 .9-.3 1.2-.6l2.8-2.6 5.8 4.3c1 .5 1.7.2 2-.9L24 3.9c.3-1.2-.5-1.7-1.4-1.3L1 10.5c-1.2.5-1.2 1.2 0 1.5l5.6 1.7 13-8c.6-.4 1-.2.5.2l-10 8.3z" />
-              </svg>
-            </li>
-          </a>
-
-        </ul>
-      </div>
-      <p class="sub-heading">Looking forward to connecting with you!</p>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-container">
-
-      <div class="footer-box">
-        <h3 class="footer-header">Kalana’s Portfolio</h3>
-        <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br /> <br /> Keep Rising
-          🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box-1">
-        <h3>Quick links</h3>
-        <a href="#hero"><i class="fas fa-chevron-circle-right"></i> Home</a>
-        <a href="#about"><i class="fas fa-chevron-circle-right"></i> About</a>
-        <a href="#skills"><i class="fas fa-chevron-circle-right"></i> Skills</a>
-        <a href="#education"><i class="fas fa-chevron-circle-right"></i> Education</a>
-        <a href="#projects"><i class="fas fa-chevron-circle-right"></i> Work</a>
-        <a href="#experience"><i class="fas fa-chevron-circle-right"></i> Experience</a>
-        <a href="#contact"><i class="fas fa-chevron-circle-right"></i> Contact</a>
-      </div>
-
-      <div class="box-2">
-        <div class="details">
-          <h3>Contact info</h3>
-          <a href="tel:+94719524213"><i class="fa-solid fa-phone" target="_blank"></i>
-            <p>+9471 952 4213</p>
-          </a>
-          <a href="mailto:kalana.warnakulasooriya@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
-            <p>kalana.warnakulasooriya@gmail.com</p>
-          </a>
-          <a href="https://maps.app.goo.gl/7hLa2BVbYWpd1LTB8" target="_blank"><i class="fa-solid fa-location-dot"></i>
-            <p>Anuradhapura Sri Lanka - 50000</p>
-          </a>
-        </div>
-
-        <div class="share">
-          <a href="https://www.linkedin.com/in/kalana-warnakulasooriya-9570b2215/" target="_blank"><i
-              class="fa-brands fa-linkedin fa-2x"></i></a>
-
-          <a href="https://github.com/kalanaCwarnakulasooriya" target="_blank"><i
-              class="fa-brands fa-github fa-2x"></i></a>
-
-          <a href="https://web.facebook.com/profile.php?id=100086889394648" target="_blank"><i
-              class="fa-brands fa-facebook fa-2x"></i></a>
-
-          <a href="https://www.instagram.com/_kalana_w_/" target="_blank"><i
-              class="fa-brands fa-instagram fa-2x"></i></a>
-
-          <a href="https://www.threads.net/@_kalana_w_" target="_blank"><i
-              class="fa-brands fa-square-threads fa-2x"></i></a>
-
-          <a href="https://x.com/Kalana_W_" target="_blank"><i class="fa-brands fa-x-twitter fa-2x"></i></a>
-
-          <!-- <a href="https://wa.me/+94719524213" target="_blank"
-              ><i class="fa-brands fa-square-whatsapp fa-2x"></i
-            ></a> -->
-
-          <a href="https://web.telegram.org/a/" target="_blank"><i class="fa-brands fa-telegram fa-2x"></i></a>
-        </div>
-      </div>
-    </div>
-    <hr>
-    <h5>© 2024 Kalana Warnakulasooriya | All rights reserved.</h5>
-  </footer>
-</body>
-
+      <h5>© 2024 Kalana Warnakulasooriya | All rights reserved.</h5>
+    </footer>
+    <script src="/js/Header.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/smooth.js"></script>
+  </body>
 </html>

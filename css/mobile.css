@@ -1,0 +1,58 @@
+/* Mobile Menu Styles */
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #222222;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+nav ul.show {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul.show li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Responsive Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Form Styles */
+input, textarea {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Utility Classes for Responsive Design */
+.hide-mobile {
+  display: none !important;
+}
+
+@media screen and (min-width: 769px) {
+  .hide-mobile {
+      display: block !important;
+  }
+}
+
+/* Fix for iOS Safari 100vh Issue */
+@supports (-webkit-touch-callout: none) {
+  #hero {
+      height: -webkit-fill-available;
+  }
+}

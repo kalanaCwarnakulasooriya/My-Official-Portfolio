@@ -1,41 +1,62 @@
-/* color code */
-/* 00AD82 */
+* {
+  font-family: "Oswald", sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  background-color: transparent; /* Background of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd; /* Color of the scrollbar thumb */
+  border-radius: 2px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #8d8d8d; /* Color when hovering over the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background: #eeeeee; /* Background of the track */
+}
+
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+  display: flex;
+  text-decoration: none;
+  color: #222222;
+  font-size: 1.5rem;
+  & p {
+    margin: auto 0 0 3px;
+  }
+}
 header {
+  z-index: 3;
   background-color: transparent;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   align-items: center;
   width: 100vw;
   height: 60px;
   position: fixed;
   transition: background-color 0.3s ease;
 }
-
-header ul {
-  font-family: "Oswald", serif;
-  font-size: 1rem;
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  & a:hover {
-    border-bottom: 2px solid #222222;
-  }
-}
-
-header a {
-  color: #2e2e2e;
-  text-decoration: none;
-}
-
-header ul a:hover {
-  color: #00ad82;
+header.scrolled {
+  background-color: #eeeeee;
+  color: black;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header img {
-  margin: 20px 0 0 40px;
-  width: 100px;
+  margin: auto 0 0 40px;
+  width: 35px;
   transition: opacity 0.3s ease;
 }
 
@@ -43,22 +64,48 @@ header img:hover {
   opacity: 0.7;
 }
 
-.logo {
-  align-items: center;
-  font-family: "Oswald", serif;
-  font-weight: 600;
+nav ul {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  text-decoration: none;
-  color: #222222;
-  font-size: 1.5rem;
-  & p {
-    margin-left: -15px;
-  }
-  & span {
-    margin: 40px 0 auto 10px;
-    color: #00ad82;
+  & a:hover {
+    border-bottom: 2px solid #222222;
   }
 }
+header a {
+  color: #2e2e2e;
+}
+header a:hover {
+  color: #000;
+}
+
+/* #call-btn {
+  margin-right: 40px;
+  font-family: "roboto", sans-serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  & a {
+    text-decoration: underline;
+  }
+  transition: all 0.3s ease;
+}
+#call-btn i {
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+#call-btn:hover {
+  background-color: #dbdbdb;
+} */
+
+
 
 #call-btn {
   margin-right: 30px;
@@ -74,7 +121,7 @@ header img:hover {
   font-size: 0.9rem;
   transition: 0.3s;
   z-index: 1;
-  font-family: "Oswald", serif;
+  font-family: "Oswald", sans-serif;
   color: #17c3b2;
   cursor: pointer;
 }
@@ -111,4 +158,4 @@ header img:hover {
 #call-btn i {
   font-size: 1rem;
   margin-left: 8px;
-}
+}     

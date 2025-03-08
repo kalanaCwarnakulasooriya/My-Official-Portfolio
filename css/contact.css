@@ -4,12 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 100vw; */
 }
 .email-container {
-  margin-top: 50px;
   width: 768px;
-  height: 600px;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -17,7 +14,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  border: 2px solid #e2e2e2;
+  border: 1px solid #e2e2e2;
 
   transition: box-shadow 0.3s ease;
 }
@@ -26,7 +23,6 @@
   box-shadow: 0 0 15px #c5c5c5;
 }
 #email-icon {
-  margin-top: -50px;
   font-size: 2rem;
   color: #00ad82;
   border: 3px solid #00ad82;
@@ -38,11 +34,10 @@
 #name,
 #subject,
 #massege {
-  margin-top: 20px;
   width: 90%;
   padding: 10px;
-  /* margin-bottom: 10px; */
-  border: 1px solid #b8b4b4;
+  margin-bottom: 10px;
+  border: 1px solid #e2e2e2;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 1rem;
@@ -62,7 +57,7 @@
 }
 
 #massege {
-  height: 180px;
+  height: 150px;
 }
 .contact-container {
   margin: 40px 0 40px 0;
@@ -123,82 +118,6 @@
 }
 #contact > .social-icons > a:hover {
   transform: scale(1.15);
-}
-
-#submit-btn {
-  margin-top: 50px;
-  position: relative;
-  padding: 7px 20px;
-  border-radius: 7px;
-  border: 2px solid #00AD82;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  background: transparent;
-  color: #000000;
-  overflow: hidden;
-  box-shadow: 0 0 0 0 transparent;
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-}
-
-#submit-btn:hover {
-  /* background: rgb(61, 106, 255); */
-  background: #00AD82;
-  box-shadow: 0 0 30px 5px #00AD82;
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-#submit-btn:hover::before {
-  -webkit-animation: sh02 0.5s 0s linear;
-  -moz-animation: sh02 0.5s 0s linear;
-  animation: sh02 0.5s 0s linear;
-}
-
-#submit-btn::before {
-  content: '';
-  display: block;
-  width: 0px;
-  height: 86%;
-  position: absolute;
-  top: 7%;
-  left: 0%;
-  opacity: 0;
-  background: #fff;
-  box-shadow: 0 0 50px 30px #fff;
-  -webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-}
-
-@keyframes sh02 {
-  from {
-    opacity: 0;
-    left: 0%;
-  }
-
-  50% {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    left: 100%;
-  }
-}
-
-#submit-btn:active {
-  box-shadow: 0 0 0 0 transparent;
-  -webkit-transition: box-shadow 0.2s ease-in;
-  -moz-transition: box-shadow 0.2s ease-in;
-  transition: box-shadow 0.2s ease-in;
 }
 
 .wrapper {

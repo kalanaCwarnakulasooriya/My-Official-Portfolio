@@ -1,15 +1,10 @@
-
 #projects {
-  background-color: #f3f3f3;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* width: 100vw; */
-  height: 70vh;
 }
 #project-container {
-  margin-top: 60px;
   padding: 20px 50px 50px 50px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -31,16 +26,16 @@
   border-radius: 10px;
 }
 #project-container > a:nth-child(1) {
-  background-image: url(/assests/images/medical_center.png);
+  background-image: url(/assests/images/medical.png);
 }
 #project-container > a:nth-child(2) {
-  background-image: url(/assests/images/tic_tac_toe.png);
+  background-image: url(/assests/images/hotel.webp);
 }
 #project-container > a:nth-child(3) {
-  background-image: url(/assets/images/project/connect4.png);
+  background-image: url(/assests/images/tic-tac-toe.webp);
 }
 #project-container > a:nth-child(4) {
-  background-image: url(/assets/images/project/shan-movie.png);
+  background-image: url(/assests/images/movie.webp);
 }
 
 .project-overlay {
@@ -73,22 +68,4 @@
 }
 .project-overlay:hover {
   opacity: 1;
-}
-
-.Topic{
-  font-family: "Oswald", serif;
-  color: black;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.Content{
-  font-family: "Oswald", serif;
-  color: black;
-  font-size: 0.8rem;
-}
-
-#project-container a{
-  text-decoration: none;
 }

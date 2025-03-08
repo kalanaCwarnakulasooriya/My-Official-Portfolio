@@ -1,0 +1,67 @@
+#key-skill {
+  background-color: white;
+}
+.skill-container {
+  padding: 20px 50px 50px 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.grid-item {
+  width: 230px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #d4d4d4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+  box-shadow: 0 0 15px #cad3d5;
+}
+
+.Logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  background-color: #00ad82;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Logo > i {
+  color: white;
+  font-size: 1rem;
+}
+
+.Topic {
+  font-family: "roboto", sans-serif;
+  padding-top: 5px;
+  color: black;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.Content {
+  padding-top: 2px;
+  margin: 2px;
+  font-family: "roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #808080;
+}
+#resume {
+  background-color: white;
+  margin: 0;
+}
+#resume-img {
+  margin: 30px 0 20px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+}
